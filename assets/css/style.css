@@ -1,7 +1,45 @@
-body{
-	background-image: url("../images/triviaBackground.jpg");
-	text-align: center;
+* {
+	box-sizing: border-box;
+	font-size: 20px;
 }
 
+body, html {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(2, 2, 34);
+	color: whitesmoke;
+	height: 100%;
+	width: 100%;
+	font-size: 20px;
+}
 
+.container {
+	text-align: center;
+	width: 75%;
+	height: 100%;
+}
 
+.title {
+	margin-bottom: 12px;
+}
+
+/* #quiz__questions {} */
+
+#quiz__results {
+	background-color: rgb(52, 57, 122);
+	margin: 0 10px 10px;
+}
+
+.quiz__questions_question {
+	background-color: rgb(52, 57, 122);
+	margin: 0 10px 10px;
+	padding: 21px 21px;
+	text-align: left;
+	line-height: 30px;
+	font-weight: 300;
+	font-size: 20px
+}
+
+input, button, submit {
+	border: none;
+}

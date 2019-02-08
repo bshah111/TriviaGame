@@ -1,26 +1,38 @@
-<!Doctype <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Trivia Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-    <script src="assets/js/app.js"></script>
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div>
-        <div id="quizcontainer" class="Container">
-            <h2> Game</h2>
-            <div id="startBtn">
-                    <button type="button" id="startBtn" Value="startGame">Start Game</button>
-            </div>
-           
-        <div id="timer"></div>
-    </div>
 
+<body>
+    <div class="container">
+        <header class="title">
+            <img src="assets/images/who-wants-to-be-a-millionaire-logo.jpg" alt="Millionaire logo image">
+            <h1>Who wants to be a MILLIONAIRE</h1>
+            <h3>Time Remaining: <span id="countdown">30</span></h3>
+        </header>
+        <!-- Dynamically created quiz questions section -->
+        <main id="quiz__questions" class="block">
+            <form id="form"></form>
+            <button type="submit" form="form" id="submit">Submit</button>
+        </main>
+        <!-- Quiz results section -->
+        <div id="quiz__results" class="block">
+            <ul>
+                <ol>Correct Answers: <span id="correct">0</span></ol>
+                <ol>Incorrect Answers: <span id="incorrect">0</span></ol>
+                <ol>Unanswered: <span id="unanswered">0</span></ol>
+            </ul>
+        </div>
+    </div>
+    <script src="assets/js/game.js"></script>
 </body>
+
 </html>
